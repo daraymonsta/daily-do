@@ -1,6 +1,6 @@
 '''
 PURPOSE
-    function to return the middle letter
+    Function to return the middle letter of a string.
     
 EXAMPLE
     mid("abc") should return "b" and mid("aaaa") should return ""
