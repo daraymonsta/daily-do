@@ -1,10 +1,10 @@
 '''
 PURPOSE
-The function capital_indexes takes a single parameter, which is a string.
-It returns a list of all the indexes in the string that have capital letters.
+    The function capital_indexes takes a single parameter, which is a string.
+    It returns a list of all the indexes in the string that have capital letters.
 
 EXAMPLE
-Calling capital_indexes("HeLlO") should return the list [0, 2, 4].
+    Calling capital_indexes("HeLlO") should return the list [0, 2, 4].
 '''
 
 def capital_indexes(input_str):
