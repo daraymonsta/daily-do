@@ -1,3 +1,15 @@
+'''
+WRITTEN BY Ramon Rossi
+
+PURPOSE
+    The function named consecutive_zeros that takes a single 
+    parameter, which is the string of zeros and one, returning 
+    the biggest number of consecutive zeros in the string.
+EXAMPLE
+    Given the string "1001101000110", the biggest number of
+    consecutive zeros is 3.
+'''
+
 def consecutive_zeros(input_str):
     print('Question: How many consecutive zeros in {}?'.format(input_str))
     
@@ -5,7 +17,7 @@ def consecutive_zeros(input_str):
     for x in range(len(input_str)):
         #print(input_str[x])
         
-        # it's the first character
+        # if it's the first character
         if x == 0:
             prev_num = input_str[x]
             #print('first num is {}'.format(prev_num))
@@ -14,7 +26,7 @@ def consecutive_zeros(input_str):
             elif input_str[x] == "0":
                 temp_counter = 1
             biggest_count = 0
-        # it's not the first character
+        # if it's not the first character
         else:
             this_num = input_str[x]
             #print('this number is {}'.format(this_num))
@@ -48,7 +60,7 @@ def consecutive_zeros(input_str):
         elif temp_counter > 0 and biggest_count == 0:
             biggest_count = temp_counter
         
-        #print('biggest count = {}'.format(biggest_count))
+        #print('biggest count so far = {}'.format(biggest_count))
             
     print('Answer: {}'.format(biggest_count))
     
